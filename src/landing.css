@@ -116,8 +116,6 @@ button, input, textarea { font: inherit; }
 
 /* Columns */
 .sidebar { display: flex; flex-direction: column; gap: var(--gap); }
-.sidebar--left { }
-.sidebar--right { }
 
 /* --- Card / Widget primitives --- */
 .card{
