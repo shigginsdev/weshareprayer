@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./landing.css"; // keep your global CSS
+import "./styles/landing.css";
 
+//entry point for WSP that mounts the app
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />

@@ -115,7 +115,7 @@ button, input, textarea { font: inherit; }
 }
 
 /* Columns */
-.sidebar { display: flex; flex-direction: column; gap: var(--gap); }
+.sidebar { display: flex; flex-direction: column; gap: var(--gap); margin: 10px }
 
 /* --- Card / Widget primitives --- */
 .card{
@@ -174,7 +174,10 @@ button, input, textarea { font: inherit; }
 .composer__btn:hover{ background: var(--brand-600); }
 
 /* Post */
-.post.card{ overflow: hidden; }
+.post.card{ 
+  overflow: hidden;
+  margin-bottom: var(--gap);
+ }
 .post__header{
   padding: 14px 16px; display: grid; grid-template-columns: 40px 1fr auto; gap: 10px; align-items: center;
 }
@@ -186,9 +189,9 @@ button, input, textarea { font: inherit; }
 
 /* Post actions */
 .post__actions{
-  display: flex; justify-content: space-between; padding: 10px 16px; border-top: 1px solid var(--stroke); color: var(--text-muted);
+  display: flex; justify-content: flex-end; padding: 10px 16px; border-top: 1px solid var(--stroke); color: var(--text-muted);
 }
-.post__action{ display: inline-flex; gap: 8px; align-items: center; cursor: pointer; padding: 8px 12px; border-radius: 10px; border: 1px solid transparent; }
+.post__action{ display: inline-flex; gap: 8px; align-items: center; cursor: pointer; padding: 8px 12px; border-radius: 10px; border: 1px solid transparent; margin-right: 10px }
 .post__action:hover{ background: var(--bg-muted); color: var(--text); border-color: var(--stroke); }
 .post__action .count{ font-weight: 600; color: var(--brand-600); }
 
