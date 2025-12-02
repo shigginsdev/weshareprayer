@@ -93,9 +93,9 @@ export default function Post({ postId, onPrayed }: PostProps) {
         <button className="post__action" aria-label="Comment on this post">
           💬 <span>Comment</span>
         </button>
-        <button className="post__action" aria-label="Share this post">
+        {/* <button className="post__action" aria-label="Share this post">
           ↗ <span>Share</span>
-        </button>
+        </button> */}
       </div>
     </article>
   );
