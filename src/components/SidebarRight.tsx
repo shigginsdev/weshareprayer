@@ -33,7 +33,7 @@ export default function RightSidebar() {
   return (
     <aside className="sidebar sidebar--right">
       <div className="card widget-activity">
-        <div className="card__header">Recent Notifications</div>
+        <div className="card__header">Recent Updates</div>
         {notifications.map((n) => (
           <div className="activity-item" key={n.id}>
             <div className="activity__icon" />
@@ -43,7 +43,7 @@ export default function RightSidebar() {
         ))}
       </div>
 
-      <div className="card widget-ad">
+      {/* <div className="card widget-ad">
         <div className="card__header">Advertisement</div>
         <div className="ad-box">AD SPACE</div>
       </div>
@@ -57,7 +57,7 @@ export default function RightSidebar() {
             <div className="friend__status" title="online" />
           </div>
         ))}
-      </div>
+      </div> */}
     </aside>
   );
 }

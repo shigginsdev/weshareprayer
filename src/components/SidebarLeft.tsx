@@ -53,7 +53,7 @@ export default function LeftSidebar() {
         </div>
       </div>
 
-      <div className="card">
+      {/* <div className="card">
         <div className="card__header">Pages You May Like</div>
         <ul className="widget-list">
           {pagesYouMayLike.map((p) => (
@@ -67,9 +67,9 @@ export default function LeftSidebar() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
-      <div className="card">
+      {/* <div className="card">
         <div className="card__header">Latest Top News</div>
         <ul className="widget-list">
           {topNews.map((n) => (
@@ -80,7 +80,7 @@ export default function LeftSidebar() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </aside>
   );
 }
