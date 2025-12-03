@@ -6,6 +6,7 @@ import SidebarRight from './components/SidebarRight'
 import HomePage from './pages/HomePage'
 import ComposePage from './pages/ComposePage'
 import PostPage from './pages/PostPage'
+import ProfilePage from './pages/ProfilePage'
 import './App.css'
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/compose" element={<ComposePage />} />
               <Route path="/post/:id" element={<PostPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
             </Routes>
           </main>
 

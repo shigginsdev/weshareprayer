@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/landing.css";
 
 /** ---- Types ---- */
@@ -39,8 +40,10 @@ export default function Topbar() {
             <span role="img" aria-label="search">🔎</span>
             <input placeholder="Search" />
           </div>
-          <button className="icon-btn" title="Create">➕</button>
-          <img className="avatar" src={makeAvatar(5)} alt="me" />
+          <Link to="/compose" className="icon-btn" title="Create">➕</Link>
+          <Link to="/profile" title="View profile">
+            <img className="avatar" src={makeAvatar(5)} alt="profile" />
+          </Link>
         </div>
       </div>
     </header>
